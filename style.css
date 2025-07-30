@@ -1,0 +1,118 @@
+body {
+    background: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    height: 100%;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.dashboard-header {
+    background: #30be2b;
+    color: #fff;
+    padding: 14px 15px;
+    font-size: 1.25em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-header button {
+    background: #232323;
+    color: #fff;
+    border: none;
+    padding: 4px 13px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: .9em;
+}
+
+.dashboard-body {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 110px;
+    background: #f3f3f3;
+    padding: 19px 0 0 15px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar ul {
+    list-style: disc inside;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 12px;
+    font-size: 1em;
+}
+
+.sidebar a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.main-content {
+    flex: 1;
+    padding: 22px 20px;
+    background: #fff;
+    color: #222;
+}
+
+.main-content h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.1em;
+}
+
+.dashboard-footer {
+    background: #30be2b;
+    color: #fff;
+    padding: 7px 0;
+    text-align: center;
+    font-size: .95em;
+}
+
+/* Dark Mode Styles */
+.dashboard.dark {
+    background: #181c20;
+    border-color: #222;
+}
+
+.dashboard.dark .dashboard-header {
+    background: #232323;
+    color: #fff;
+}
+
+.dashboard.dark .dashboard-header button {
+    background: #30be2b;
+    color: #2e2e2e;
+}
+
+.dashboard.dark .sidebar {
+    background: #363c42;
+    border-right: 1px solid #232323;
+}
+
+.dashboard.dark .sidebar a {
+    color: #b4ffb2;
+}
+
+.dashboard.dark .main-content {
+    background: #181c20;
+    color: #f4f4f4;
+}
+
+.dashboard.dark .dashboard-footer {
+    background: #232323;
+    color: #b4ffb2;
+}
